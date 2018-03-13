@@ -24,7 +24,7 @@ public class Shop2018 {
         
         Cart koszyk = new Cart();
         koszyk.add(maslo);
-        koszyk.add(maslo);
+        koszyk.add(jogurt);
         koszyk.add(mleko);
         koszyk.add(chleb);
         
