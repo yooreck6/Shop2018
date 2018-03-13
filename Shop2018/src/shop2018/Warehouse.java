@@ -27,6 +27,11 @@ public class Warehouse {
                 products.add(new Product("smietana", new BigDecimal("1.5")));                
             }
     
+    public Collection<Product> productsAvilable()
+    {
+                
+    }
+    
     public Collection<Product> productsSortedByName()
     {
         TreeSet<Product> set = new TreeSet();
