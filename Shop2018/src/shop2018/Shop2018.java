@@ -28,9 +28,12 @@ public class Shop2018 {
         koszyk.add(mleko);
         koszyk.add(chleb);
         
-        System.out.println(koszyk.toPay());
         System.out.println(koszyk);
-                
+        
+        Warehouse w = new Warehouse();
+        System.out.println(w);
+        w.doOrder(koszyk);
+        System.out.println(w);                
     }
     
 }

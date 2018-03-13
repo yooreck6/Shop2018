@@ -17,6 +17,7 @@ import java.util.TreeSet;
 public class Warehouse {
     
     private List<Product> products = new ArrayList();
+    
     public Warehouse()
             {
                 products.add(new Product("chleb", new BigDecimal("2.2")));
@@ -39,6 +40,11 @@ public class Warehouse {
         TreeSet<Product> set = new TreeSet(c);
         set.addAll(products);
         return set;
+    }
+    
+    public void doOrder(Cart cart)
+    {
+        
     }
     
     @Override
