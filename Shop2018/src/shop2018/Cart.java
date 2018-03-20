@@ -7,6 +7,7 @@ package shop2018;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -38,6 +39,16 @@ public class Cart {
             sum = sum.add(p.getPrice().multiply(new BigDecimal(ilosc)));
         }
         return sum;
+    }
+    
+    public Collection<Product> getProducts()
+    {
+        return map.keySet();
+    }
+    
+    public int getCount(Product p)
+    {
+        return map.get(p);
     }
     
     public String toString()

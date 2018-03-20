@@ -27,13 +27,15 @@ public class Shop2018 {
         koszyk.add(jogurt);
         koszyk.add(mleko);
         koszyk.add(chleb);
+        koszyk.add(chleb);
         
         System.out.println(koszyk);
         
         Warehouse w = new Warehouse();
         System.out.println(w);
         w.doOrder(koszyk);
-        System.out.println(w);                
+        System.out.println(w);
+        
     }
     
 }
